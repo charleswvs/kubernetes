@@ -17,5 +17,10 @@ spec:
         app: goserver
     spec:
       containers:
-      - name: goserver
-        image: charles00willian/hello-go:latest
+        - name: goserver
+          image: charles00willian/hello-go:v2
+          env:
+            - name: NAME
+              value: "CHARLES"
+            - name: AGE
+              value: "22"
